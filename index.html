@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sticky Wall</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-head">
+        <h2>Menu</h2>
+        <button class="icon-btn" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+      </div>
+
+      <label class="search">
+        <span aria-hidden="true">&#128269;</span>
+        <input type="search" id="search" placeholder="Search">
+      </label>
+
+      <p class="group-title">Tasks</p>
+      <nav class="nav">
+        <a href="#"><span class="ico">&raquo;</span>Upcoming<b>12</b></a>
+        <a href="#"><span class="ico">&#9776;</span>Today<b>5</b></a>
+        <a href="#"><span class="ico">&#9638;</span>Calendar</a>
+        <a href="#" class="active"><span class="ico">&#9646;</span>Sticky Wall</a>
+      </nav>
+
+      <p class="group-title">Lists</p>
+      <nav class="nav">
+        <a href="#"><i class="dot" style="background:#dbb287"></i>Personal<b>3</b></a>
+        <a href="#"><i class="dot" style="background:#a9b9a3"></i>Work<b>3</b></a>
+        <a href="#"><i class="dot" style="background:#dbb287"></i>List 1<b>3</b></a>
+        <a href="#"><span class="ico">+</span>Add New List</a>
+      </nav>
+
+      <p class="group-title">Tags</p>
+      <div class="tags">
+        <span class="tag" style="background:#cfe8ee">Tag 1</span>
+        <span class="tag" style="background:#ffd9d9">Tag 2</span>
+        <span class="tag tag-add">+ Add Tag</span>
+      </div>
+
+      <div class="sidebar-foot">
+        <a href="#"><span class="ico">&#9881;</span>Settings</a>
+        <a href="#"><span class="ico">&#10162;</span>Sign out</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <h1>Sticky Wall</h1>
+      <section class="wall" id="wall"></section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
