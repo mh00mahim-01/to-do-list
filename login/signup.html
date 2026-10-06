@@ -1,37 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Sign Up</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@700;800&display=swap"
-        rel="stylesheet"
-    >
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
-    </head>
+</head>
+
 <body>
-    <main class="signup-container">
+
+    <main class="signup_container">
+
         <!-- Left decorative section -->
         <section class="art" aria-hidden="true">
-            <h2 class="site-name">
-                join your xyz<br>
-                <span>journe</span>
-            </h2>
+
+            <div class="signup-message">
+                <h2>
+                    JOIN OUR
+                    <br>
+                    <span>JOURNEY</span>
+                </h2>
+
+                <p>
+                    Create your account and be part of
+                    <br>
+                    something amazing.
+                </p>
+            </div>
+
         </section>
-        <!-- Main sign-up form -->
+
+
+        <!-- Right sign-up section -->
         <section class="panel">
+
             <form class="form" action="#" method="post">
+
                 <h1>Sign Up</h1>
+
+                <p class="form-subtitle">
+                    Get started with your account
+                </p>
+
+
+                <!-- Full Name -->
+                <label class="name-input">
+
+                    <span class="name-icon">♙</span>
+
+                    <input
+                        type="text"
+                        name="fullname"
+                        placeholder="Full Name"
+                        required>
+
+                </label>
+
+
                 <!-- Email -->
                 <label class="email-input">
+
                     <span class="email-icon">✉</span>
+
                     <input
                         type="email"
                         name="email"
-                        placeholder="Email"
-                        required
-                    >
+                        placeholder="Email Address"
+                        required>
+
                 </label>
+
+
                 <!-- Password -->
+                <label class="password-input">
+
+                    <span class="password-icon">🔒</span>
+
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="Password"
+                        required>
+
+                </label>
+
+
+                <!-- Confirm Password -->
+                <label class="confirm-password-input">
+
+                    <span class="password-icon">🔒</span>
+
+                    <input
+                        type="password"
+                        name="confirm-password"
+                        placeholder="Confirm Password"
+                        required>
+
+                </label>
+
+
+                <!-- Sign Up Button -->
+                <button
+                    type="submit"
+                    class="submit-btn">
+
+                    Sign Up
+
+                </button>
+
+
+                <!-- Separator -->
+                <div class="separator">
+
+                    <span>or</span>
+
+                </div>
+
+
+                <!-- Social Sign Up -->
+                <div class="social-buttons">
+
+                    <button
+                        type="button"
+                        class="social-btn google">
+
+                        <span class="social-icon">G</span>
+
+                        <span class="social-text">
+                            Sign up with Google
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="social-btn facebook">
+
+                        <span class="social-icon">F</span>
+
+                        <span class="social-text">
+                            Sign up with Facebook
+                        </span>
+
+                    </button>
+
+                </div>
+
+
+                <!-- Sign In Link -->
+                <p class="signup-link">
+
+                    Already have an account?
+
+                    <a href="index.html">
+                        Sign In
+                    </a>
+
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
 </html>
