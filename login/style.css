@@ -1,0 +1,579 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+
+    background-color: #0d061c;
+
+    font-family: "Source Sans 3", sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin_container,
+.signup_container {
+    width: 950px;
+
+    display: flex;
+
+    background-color: #1b0b38;
+
+    overflow: hidden;
+}
+
+
+/* Sign In */
+
+.signin_container {
+    min-height: 500px;
+}
+
+
+/* Sign Up */
+
+.signup_container {
+    min-height: 600px;
+}
+
+
+/* LEFT DECORATIVE SECTION */
+
+.art {
+    width: 50%;
+
+    position: relative;
+
+    background-image: url("space-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 40px;
+}
+
+
+/* Sign In left section */
+
+.signin_container .art {
+    min-height: 500px;
+}
+
+
+/* Sign Up left section */
+
+.signup_container .art {
+    min-height: 600px;
+}
+
+
+/* ========================================
+   SIGN IN SITE NAME
+======================================== */
+
+.site-name {
+    color: white;
+
+    font-size: 28px;
+    font-weight: 800;
+
+    line-height: 1.05;
+
+    text-transform: uppercase;
+}
+
+
+/* appName */
+
+.site-name span {
+    color: #6847d8;
+}
+
+
+/* ========================================
+   SIGN UP LEFT MESSAGE
+======================================== */
+
+.signup-message {
+    color: white;
+}
+
+
+/* JOIN OUR JOURNEY */
+
+.signup-message h2 {
+    font-size: 32px;
+    font-weight: 800;
+
+    line-height: 1.05;
+
+    text-transform: uppercase;
+}
+
+
+/* JOURNEY */
+
+.signup-message h2 span {
+    color: #6847d8;
+}
+
+
+/* Description */
+
+.signup-message p {
+    margin-top: 18px;
+
+    color: #c4b7df;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+
+/* ========================================
+   RIGHT PANEL
+   Works for both pages
+======================================== */
+
+.panel {
+    width: 50%;
+
+    background-color: #1b0b38;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+
+/* ========================================
+   FORM
+======================================== */
+
+.form {
+    width: 100%;
+
+    max-width: 320px;
+}
+
+
+/* Sign Up needs slightly wider form */
+
+.signup_container .form {
+    max-width: 360px;
+}
+
+
+/* ========================================
+   MAIN HEADING
+======================================== */
+
+.form h1 {
+    color: white;
+
+    font-size: 40px;
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    margin-bottom: 25px;
+}
+
+
+/* Sign Up subtitle creates extra space */
+
+.form-subtitle {
+    color: #a99bc4;
+
+    font-size: 15px;
+
+    margin-top: -15px;
+    margin-bottom: 22px;
+}
+
+
+/* ========================================
+   INPUT BOXES
+   Works for all input types
+======================================== */
+
+.email-input,
+.password-input,
+.name-input,
+.confirm-password-input {
+    width: 100%;
+
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #392066;
+
+    border: 1px solid #51338d;
+
+    border-radius: 8px;
+
+    padding: 0 12px;
+
+    margin-bottom: 12px;
+
+    transition: 0.2s;
+}
+
+
+/* Input focus */
+
+.email-input:focus-within,
+.password-input:focus-within,
+.name-input:focus-within,
+.confirm-password-input:focus-within {
+    border-color: #7955e8;
+
+    box-shadow: 0 0 8px rgba(105, 70, 220, 0.3);
+}
+
+
+/* ========================================
+   INPUT ICONS
+======================================== */
+
+.email-icon,
+.password-icon,
+.name-icon {
+    width: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 5px;
+
+    color: #b7a6db;
+
+    font-size: 17px;
+}
+
+
+/* ========================================
+   INPUT FIELDS
+======================================== */
+
+.email-input input,
+.password-input input,
+.name-input input,
+.confirm-password-input input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 14px;
+}
+
+
+/* Placeholder */
+
+.email-input input::placeholder,
+.password-input input::placeholder,
+.name-input input::placeholder,
+.confirm-password-input input::placeholder {
+    color: #a99bc4;
+}
+
+
+/* ========================================
+   SIGN IN / SIGN UP BUTTON
+======================================== */
+
+.submit-btn {
+    width: 100%;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    margin-top: 5px;
+
+    background: linear-gradient(
+        90deg,
+        #5820c9,
+        #3b8bc9
+    );
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+/* Button hover */
+
+.submit-btn:hover {
+    opacity: 0.9;
+
+    transform: translateY(-1px);
+}
+
+
+/* ========================================
+   SEPARATOR
+======================================== */
+
+.separator {
+    display: flex;
+
+    align-items: center;
+
+    margin: 20px 0;
+
+    color: #a99bc4;
+
+    font-size: 12px;
+}
+
+
+/* Left and right lines */
+
+.separator::before,
+.separator::after {
+    content: "";
+
+    height: 1px;
+
+    background-color: #604a83;
+
+    flex: 1;
+}
+
+
+/* Separator text */
+
+.separator span {
+    padding: 0 12px;
+
+    white-space: nowrap;
+}
+
+
+/* ========================================
+   SOCIAL BUTTONS
+======================================== */
+
+.social-buttons {
+    display: flex;
+
+    gap: 12px;
+}
+
+
+/* Google and Facebook */
+
+.social-btn {
+    flex: 1;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #392066;
+
+    color: #d4c9e7;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    transition: 0.2s;
+}
+
+
+/* Hover */
+
+.social-btn:hover {
+    background-color: #47277c;
+}
+
+
+/* Social icons */
+
+.social-icon {
+    font-size: 16px;
+
+    font-weight: 700;
+}
+
+
+/* Google */
+
+.google .social-icon {
+    color: #4285f4;
+}
+
+
+/* Facebook */
+
+.facebook .social-icon {
+    color: #1877f2;
+}
+
+
+/* Social text */
+
+.social-text {
+    font-size: 13px;
+}
+
+
+/* ========================================
+   SIGN UP / SIGN IN LINK
+======================================== */
+
+.signup-link {
+    color: #9e91b8;
+
+    font-size: 12px;
+
+    margin-top: 16px;
+
+    text-align: left;
+}
+
+
+/* Sign In link on Sign Up page */
+
+.signup_container .signup-link {
+    text-align: center;
+}
+
+
+/* Link */
+
+.signup-link a {
+    color: #7352dc;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+
+/* Link hover */
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 750px) {
+
+    .signin_container,
+    .signup_container {
+        width: 95%;
+
+        flex-direction: column;
+    }
+
+
+    .art {
+        width: 100%;
+
+        padding: 30px;
+    }
+
+
+    .signin_container .art {
+        min-height: 250px;
+    }
+
+
+    .signup_container .art {
+        min-height: 280px;
+    }
+
+
+    .panel {
+        width: 100%;
+
+        padding: 35px 25px;
+    }
+}
+
+
+/* ========================================
+   SMALL SCREEN
+======================================== */
+
+@media (max-width: 500px) {
+
+    .signin_container,
+    .signup_container {
+        width: 100%;
+
+        border-radius: 0;
+    }
+
+
+    .social-buttons {
+        flex-direction: column;
+    }
+
+
+    .signin_container .art {
+        min-height: 220px;
+    }
+
+
+    .signup_container .art {
+        min-height: 240px;
+    }
+
+
+    .form h1 {
+        font-size: 34px;
+    }
+}
