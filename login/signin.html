@@ -21,34 +21,35 @@
 
 <body>
 
-    <main class="signin_container">
+    <main class="signin_container" id="signinContainer">
 
         <!-- Left decorative section -->
-        <section class="art" aria-hidden="true">
+        <section class="art" id="artSection" aria-hidden="true">
 
-            <h2 class="site-name">
+            <h2 class="site-name" id="siteName">
                 sign into your<br>
-                <span>appName</span>
+                <span id="appName">appName</span>
             </h2>
 
         </section>
 
 
         <!-- Main sign-in form -->
-        <section class="panel">
+        <section class="panel" id="panelSection">
 
-            <form class="form" action="#" method="post">
+            <form class="form" id="signinForm" action="#" method="post">
 
-                <h1>Sign In</h1>
+                <h1 id="formTitle">Sign In</h1>
 
 
                 <!-- Email -->
-                <label class="email-input">
+                <label class="email-input" id="emailLabel">
 
-                    <span class="email-icon">✉</span>
+                    <span class="email-icon" id="emailIcon">✉</span>
 
                     <input
                         type="email"
+                        id="emailInput"
                         name="email"
                         placeholder="Email"
                         required
@@ -58,12 +59,13 @@
 
 
                 <!-- Password -->
-                <label class="password-input">
+                <label class="password-input" id="passwordLabel">
 
-                    <span class="password-icon">🔒</span>
+                    <span class="password-icon" id="passwordIcon">🔒</span>
 
                     <input
                         type="password"
+                        id="passwordInput"
                         name="password"
                         placeholder="Password"
                         required
@@ -76,44 +78,47 @@
                 <button
                     type="submit"
                     class="submit-btn"
+                    id="submitBtn"
                 >
                     Sign In
                 </button>
 
 
                 <!-- Separator -->
-                <div class="separator">
-                    <span>or continue with</span>
+                <div class="separator" id="separator">
+                    <span id="separatorText">or continue with</span>
                 </div>
 
 
                 <!-- Social buttons -->
-                <div class="social-buttons">
+                <div class="social-buttons" id="socialButtons">
 
                     <button
                         type="button"
                         class="social-btn google"
+                        id="googleBtn"
                     >
-                        <span class="social-icon">G</span>
-                        <span class="social-text">Google</span>
+                        <span class="social-icon" id="googleIcon">G</span>
+                        <span class="social-text" id="googleText">Google</span>
                     </button>
 
 
                     <button
                         type="button"
                         class="social-btn facebook"
+                        id="facebookBtn"
                     >
-                        <span class="social-icon">F</span>
-                        <span class="social-text">Facebook</span>
+                        <span class="social-icon" id="facebookIcon">F</span>
+                        <span class="social-text" id="facebookText">Facebook</span>
                     </button>
 
                 </div>
 
 
                 <!-- Sign up -->
-                <p class="signup-link">
+                <p class="signup-link" id="signupLinkWrapper">
                     Don't have an account?
-                    <a href="signup.html">Sign Up</a>
+                    <a href="signup.html" id="signupLink">Sign Up</a>
                 </p>
 
             </form>

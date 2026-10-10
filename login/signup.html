@@ -1,178 +1,190 @@
+
+
+Signup · HTML
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+ 
     <title>Sign Up</title>
-
+ 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
+ 
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&display=swap"
         rel="stylesheet">
-
+ 
     <link rel="stylesheet" href="styles.css">
 </head>
-
+ 
 <body>
-
-    <main class="signup_container">
-
+ 
+    <main class="signup_container" id="signupContainer">
+ 
         <!-- Left decorative section -->
-        <section class="art" aria-hidden="true">
-
-            <div class="signup-message">
-                <h2>
+        <section class="art" id="artSection" aria-hidden="true">
+ 
+            <div class="signup-message" id="signupMessage">
+                <h2 id="signupHeading">
                     JOIN OUR
                     <br>
-                    <span>JOURNEY</span>
+                    <span id="signupHeadingAccent">JOURNEY</span>
                 </h2>
-
-                <p>
+ 
+                <p id="signupDescription">
                     Create your account and be part of
                     <br>
                     something amazing.
                 </p>
             </div>
-
+ 
         </section>
-
-
+ 
+ 
         <!-- Right sign-up section -->
-        <section class="panel">
-
-            <form class="form" action="#" method="post">
-
-                <h1>Sign Up</h1>
-
-                <p class="form-subtitle">
+        <section class="panel" id="panelSection">
+ 
+            <form class="form" id="signupForm" action="#" method="post">
+ 
+                <h1 id="formTitle">Sign Up</h1>
+ 
+                <p class="form-subtitle" id="formSubtitle">
                     Get started with your account
                 </p>
-
-
+ 
+ 
                 <!-- Full Name -->
-                <label class="name-input">
-
-                    <span class="name-icon">♙</span>
-
+                <label class="name-input" id="nameLabel">
+ 
+                    <span class="name-icon" id="nameIcon">♙</span>
+ 
                     <input
                         type="text"
+                        id="fullnameInput"
                         name="fullname"
                         placeholder="Full Name"
                         required>
-
+ 
                 </label>
-
-
+ 
+ 
                 <!-- Email -->
-                <label class="email-input">
-
-                    <span class="email-icon">✉</span>
-
+                <label class="email-input" id="emailLabel">
+ 
+                    <span class="email-icon" id="emailIcon">✉</span>
+ 
                     <input
                         type="email"
+                        id="emailInput"
                         name="email"
                         placeholder="Email Address"
                         required>
-
+ 
                 </label>
-
-
+ 
+ 
                 <!-- Password -->
-                <label class="password-input">
-
-                    <span class="password-icon">🔒</span>
-
+                <label class="password-input" id="passwordLabel">
+ 
+                    <span class="password-icon" id="passwordIcon">🔒</span>
+ 
                     <input
                         type="password"
+                        id="passwordInput"
                         name="password"
                         placeholder="Password"
                         required>
-
+ 
                 </label>
-
-
+ 
+ 
                 <!-- Confirm Password -->
-                <label class="confirm-password-input">
-
-                    <span class="password-icon">🔒</span>
-
+                <label class="confirm-password-input" id="confirmPasswordLabel">
+ 
+                    <span class="password-icon" id="confirmPasswordIcon">🔒</span>
+ 
                     <input
                         type="password"
+                        id="confirmPasswordInput"
                         name="confirm-password"
                         placeholder="Confirm Password"
                         required>
-
+ 
                 </label>
-
-
+ 
+ 
                 <!-- Sign Up Button -->
                 <button
                     type="submit"
-                    class="submit-btn">
-
+                    class="submit-btn"
+                    id="submitBtn">
+ 
                     Sign Up
-
+ 
                 </button>
-
-
+ 
+ 
                 <!-- Separator -->
-                <div class="separator">
-
-                    <span>or</span>
-
+                <div class="separator" id="separator">
+ 
+                    <span id="separatorText">or</span>
+ 
                 </div>
-
-
+ 
+ 
                 <!-- Social Sign Up -->
-                <div class="social-buttons">
-
+                <div class="social-buttons" id="socialButtons">
+ 
                     <button
                         type="button"
-                        class="social-btn google">
-
-                        <span class="social-icon">G</span>
-
-                        <span class="social-text">
+                        class="social-btn google"
+                        id="googleBtn">
+ 
+                        <span class="social-icon" id="googleIcon">G</span>
+ 
+                        <span class="social-text" id="googleText">
                             Sign up with Google
                         </span>
-
+ 
                     </button>
-
-
+ 
+ 
                     <button
                         type="button"
-                        class="social-btn facebook">
-
-                        <span class="social-icon">F</span>
-
-                        <span class="social-text">
+                        class="social-btn facebook"
+                        id="facebookBtn">
+ 
+                        <span class="social-icon" id="facebookIcon">F</span>
+ 
+                        <span class="social-text" id="facebookText">
                             Sign up with Facebook
                         </span>
-
+ 
                     </button>
-
+ 
                 </div>
-
-
+ 
+ 
                 <!-- Sign In Link -->
-                <p class="signup-link">
-
+                <p class="signup-link" id="signinLinkWrapper">
+ 
                     Already have an account?
-
-                    <a href="index.html">
+ 
+                    <a href="index.html" id="signinLink">
                         Sign In
                     </a>
-
+ 
                 </p>
-
+ 
             </form>
-
+ 
         </section>
-
+ 
     </main>
  <script src="script.js"></script>
 </body>
-
+ 
 </html>
+ 
+Claude finished the response
